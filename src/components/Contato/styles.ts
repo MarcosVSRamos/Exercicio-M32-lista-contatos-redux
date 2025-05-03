@@ -2,17 +2,6 @@ import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 import { Botao } from '../../styles'
 
-type TagProps = {
-  status?: string
-}
-function retornaCorDeFundo(props: TagProps): string {
-  if ('status' in props) {
-    if (props.status === 'bloqueado') return variaveis.corVermelha
-  }
-
-  return variaveis.textoPrincipal
-}
-
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
@@ -35,10 +24,12 @@ export const Card = styled.div`
   margin-bottom: 8px;
 `
 
-export const Tag = styled.span<TagProps>`
+export const Tag = styled.span`
   width: 208px;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   text-align: center;
-  color: ${(props) => retornaCorDeFundo(props)};
 `
 
 export const BotaoSalvar = styled(Botao)`
@@ -51,6 +42,8 @@ export const BotaoCancelar = styled(Botao)`
 export const Nome = styled.label`
   width: 200px;
   max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 
   p {
     display: flex;

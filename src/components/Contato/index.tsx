@@ -4,11 +4,11 @@ import { Botao } from '../../styles'
 
 type Props = {
   nome: string
-  status: string
+  email: string
   numero: number
 }
 
-const Contato = ({ nome, numero, status }: Props) => {
+const Contato = ({ nome, numero, email }: Props) => {
   const [estaEditanto, setEstaEditando] = useState(false)
 
   return (
@@ -19,7 +19,7 @@ const Contato = ({ nome, numero, status }: Props) => {
             Nome: <h3>{nome}</h3>
           </p>
         </S.Nome>
-        <S.Tag status={status}>{status}</S.Tag>
+        <S.Tag>{email}</S.Tag>
         <p>
           Número: <span>{numero}</span>
         </p>
