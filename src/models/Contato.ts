@@ -1,7 +1,7 @@
 class Contato {
   nome: string
   email: string
-  numero: number
+  numero: string | number
   id: number
 
   constructor(nome: string, email: string, numero: number, id: number) {

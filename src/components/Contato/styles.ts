@@ -40,6 +40,7 @@ export const Tag = styled.input`
 export const TagNome = styled.textarea`
   font-weight: bold;
   background-color: transparent;
+  text-align: center;
   resize: none;
   border: none;
   width: 100%;
