@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import variaveis from '../../styles/variaveis'
 
 export const Titulo = styled.h1`
   display: flex;
@@ -19,6 +20,7 @@ export const Form = styled.form`
     height: 20px;
     border-radius: 8px;
     border: none;
+    color: ${variaveis.textoSecundario};
 
     &[type='number']::-webkit-inner-spin-button,
     &[type='number']::-webkit-outer-spin-button {

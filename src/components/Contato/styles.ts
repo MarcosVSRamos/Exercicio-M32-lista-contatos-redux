@@ -2,6 +2,10 @@ import styled from 'styled-components'
 import variaveis from '../../styles/variaveis'
 import { Botao } from '../../styles'
 
+interface Props {
+  estaEditando?: boolean
+}
+
 export const Div = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,13 +13,13 @@ export const Div = styled.div`
   // background-color: ${variaveis.corDeFundo};
 `
 
-export const Card = styled.div`
+export const Card = styled.div<Props>`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 880px;
   max-width: 80%;
-  background-color: #576574;
+  background-color: ${(props) => (props.estaEditando ? '##222f3e' : '#576574')};
   box-shadow: 2px 4px 4px rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   border: 1px solid #c8d6e5;

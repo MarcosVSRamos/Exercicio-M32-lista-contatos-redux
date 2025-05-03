@@ -53,7 +53,7 @@ const Contato = ({
 
   return (
     <S.Div>
-      <S.Card>
+      <S.Card estaEditando={estaEditando}>
         <S.Nome>
           <p>
             Nome:
