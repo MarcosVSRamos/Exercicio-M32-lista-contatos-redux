@@ -4,12 +4,18 @@ import { RootReducer } from '../../store'
 import ContatoClass from '../../models/Contato'
 
 const ListaDeContatos = () => {
-  const contatos: ContatoClass[] = useSelector(
-    (state: RootReducer) => state.contatos.itens
-  )
+  const { itens } = useSelector((state: RootReducer) => state.contatos)
+  const { termo } = useSelector((state: RootReducer) => state.filtro)
+
+  const filtraContatos = (): ContatoClass[] => {
+    return itens.filter(
+      (item) => item.nome.toLowerCase().search(termo.toLowerCase()) >= 0
+    )
+  }
+
   return (
     <ul>
-      {contatos.map((c) => (
+      {filtraContatos().map((c) => (
         <li key={c.id}>
           <Contato nome={c.nome} numero={c.numero} email={c.email} id={c.id} />
         </li>
