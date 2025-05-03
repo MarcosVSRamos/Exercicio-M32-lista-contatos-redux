@@ -36,12 +36,14 @@ const Cadastro = () => {
       <Titulo>Adicione um Novo Contato</Titulo>
       <Form onSubmit={cadastrarContato}>
         <input
+          required
           value={nome}
           onChange={(evento) => setNome(evento.target.value)}
           type="text"
           placeholder="Nome Completo"
         />
         <input
+          required
           value={email}
           onChange={(evento) => setEmail(evento.target.value)}
           type="email"
