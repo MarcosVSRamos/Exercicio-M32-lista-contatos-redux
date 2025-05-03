@@ -39,7 +39,7 @@ const Contato = ({ nome, numero, email, id }: Props) => {
                 Editar
               </Botao>
               <S.BotaoCancelar
-                onClick={() => dispatch(remover(id))}
+                onClick={() => dispatch(remover(Number(id)))}
                 type="button"
               >
                 Remover

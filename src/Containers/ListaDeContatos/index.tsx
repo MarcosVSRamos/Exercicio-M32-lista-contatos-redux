@@ -4,14 +4,14 @@ import { Texto } from './styles'
 import { RootReducer } from '../../store'
 
 const ListaDeContatos = () => {
-  const { itens } = useSelector((state: RootReducer) => state.contatos)
+  const { contatos } = useSelector((state: RootReducer) => state)
 
   return (
     <>
       <Texto>10 contatos encontrados como : bloqueados</Texto>
       <ul>
-        {itens.map((c) => (
-          <li key={c.numero}>
+        {contatos.map((c) => (
+          <li key={c.id}>
             <Contato
               nome={c.nome}
               numero={c.numero}
