@@ -20,9 +20,7 @@ const Contato = ({ nome, numero, email }: Props) => {
           </p>
         </S.Nome>
         <S.Tag>{email}</S.Tag>
-        <p>
-          Número: <span>{numero}</span>
-        </p>
+        <span>{numero}</span>
         <div>
           {estaEditanto ? (
             <>

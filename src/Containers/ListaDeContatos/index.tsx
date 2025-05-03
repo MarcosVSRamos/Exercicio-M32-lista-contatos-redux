@@ -1,25 +1,11 @@
+import { useSelector } from 'react-redux'
 import Contato from '../../components/Contato'
 import { Texto } from './styles'
-
-const contatos = [
-  {
-    nome: 'Marcos Vinicius',
-    numero: 67999663322,
-    email: 'vimarcosviiini@gmail.com'
-  },
-  {
-    nome: 'Claudio Roberto',
-    numero: 11999663322,
-    email: 'vimarcosviiini@gmail.com'
-  },
-  {
-    nome: 'Juliana Abreu',
-    numero: 99999663322,
-    email: 'vimarcosviiini@gmail.com'
-  }
-]
+import { RootReducer } from '../../store'
 
 const ListaDeContatos = () => {
+  const { contatos } = useSelector((state: RootReducer) => state)
+
   return (
     <>
       <Texto>10 contatos encontrados como : bloqueados</Texto>
