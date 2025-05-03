@@ -10,7 +10,7 @@ type Props = ContatoClass
 
 const Contato = ({ nome, numero, email, id }: Props) => {
   const dispatch = useDispatch()
-  const [estaEditanto, setEstaEditando] = useState(false)
+  const [estaEditando, setEstaEditando] = useState(false)
 
   return (
     <S.Div>
@@ -23,7 +23,7 @@ const Contato = ({ nome, numero, email, id }: Props) => {
         <S.Tag>{email}</S.Tag>
         <span>{numero}</span>
         <div>
-          {estaEditanto ? (
+          {estaEditando ? (
             <>
               <S.BotaoSalvar type="button"> Salvar </S.BotaoSalvar>
               <S.BotaoCancelar
@@ -39,7 +39,7 @@ const Contato = ({ nome, numero, email, id }: Props) => {
                 Editar
               </Botao>
               <S.BotaoCancelar
-                onClick={() => dispatch(remover(Number(id)))}
+                onClick={() => dispatch(remover(id))}
                 type="button"
               >
                 Remover
