@@ -24,12 +24,29 @@ export const Card = styled.div`
   margin-bottom: 8px;
 `
 
-export const Tag = styled.span`
+export const Tag = styled.input`
   width: 208px;
   max-width: 100%;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
   text-align: center;
+  background-color: transparent;
+  border: none;
+
+  &[type='number']::-webkit-inner-spin-button,
+  &[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+`
+export const TagNome = styled.textarea`
+  font-weight: bold;
+  background-color: transparent;
+  resize: none;
+  border: none;
+  width: 100%;
+  margin-left: 6px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
 `
 
 export const BotaoSalvar = styled(Botao)`

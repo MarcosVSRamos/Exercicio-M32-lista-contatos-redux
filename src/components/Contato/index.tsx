@@ -17,11 +17,12 @@ const Contato = ({ nome, numero, email, id }: Props) => {
       <S.Card>
         <S.Nome>
           <p>
-            Nome: <h3>{nome}</h3>
+            Nome:
+            <S.TagNome value={nome} readOnly />
           </p>
         </S.Nome>
-        <S.Tag>{email}</S.Tag>
-        <span>{numero}</span>
+        <S.Tag type="email" value={email} readOnly />
+        <S.Tag type="number" value={numero} readOnly />
         <div>
           {estaEditando ? (
             <>
