@@ -10,13 +10,13 @@ const initialState: ContatosState = {
     {
       id: 1,
       email: 'emaildeteste4321@gmail.com',
-      nome: 'Marcos Vinicius Santos Ramos',
+      nome: 'Regina Maria Santos e Lima',
       numero: 11967676767
     },
     {
       id: 2,
       email: 'emaildeteste4321@gmail.com',
-      nome: 'Marcos Vinicius Santos Ramos',
+      nome: 'Juliana Abreu Rocha da Silva',
       numero: 11967676767
     },
     {
