@@ -10,4 +10,4 @@ Uma simples lista de contatos com funções de adição, remoção e edição de
 
 <br/><br/>
 
-https://exercicio-m32-lista-contatos-redux.vercel.app/"
+https://exercicio-m32-lista-contatos-redux.vercel.app/
