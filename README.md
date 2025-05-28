@@ -2,7 +2,7 @@
 
 Projeto utilizando, principalmente, TypeScript.
 <br/>
-Uma simples lista de contatos com funções de adição, remoção e edição de contatos à lista
+Uma simples lista de contatos com funções filtro de busca, adição, remoção e edição de contatos à lista
 
 <br/><br/>
 
