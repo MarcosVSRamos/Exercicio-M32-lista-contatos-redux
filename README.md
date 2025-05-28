@@ -1,8 +1,8 @@
 [Acesse a lista](https://exercicio-m32-lista-contatos-redux.vercel.app/)
 
-Projeto utilizando, principalmente, TypeScript.
 <br/>
-Uma simples lista de contatos com funções filtro de busca, adição, remoção e edição de contatos à lista
+Uma simples lista de contatos com funções filtro de busca, adição, remoção e edição de contatos à lista. <br/>
+Desenvolvido utilizando ReactJs, Redux e React Router DOM
 
 <br/><br/>
 
